@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مساعد الطالب التقني — ابدأ رحلتك التقنية من الصفر</title>
+<meta name="description" content="منصة تعليمية تفاعلية تساعد المبتدئين على اختيار تخصصهم التقني والتقدم فيه عبر خريطة طريق، دروس، اختبارات وأدوات.">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('mst:theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<div id="app-header"></div>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>ابدأ رحلتك التقنية من الصفر 🚀</h1>
+        <p class="lead">تعلم، طبّق، اختبر نفسك، وابنِ مستقبلك التقني خطوة بخطوة.</p>
+        <div class="hero-cta">
+          <a class="btn btn-lg" href="roadmap.html">ابدأ رحلتك الآن</a>
+          <a class="btn btn-lg btn-ghost" href="tools.html">جرّب الأدوات</a>
+        </div>
+        <p class="hero-note">مجاني للبدء. يُحفظ تقدمك على جهازك.</p>
+      </div>
+      <div class="trail-card" id="hero-trail" aria-label="رسم توضيحي لخريطة رحلة تعلم"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><h2>كيف تسير الرحلة؟</h2><p>كل محطة صغيرة بما يكفي لتنهيها في جلسة واحدة.</p></div>
+      <div class="steps">
+        <div class="step"><h3>اختر تخصصك</h3><p>عشرة مسارات، وكل مسار يبدأ من الصفر.</p></div>
+        <div class="step"><h3>تعلّم الفكرة</h3><p>درس منظم يشرح المصطلح بلغة بسيطة ومثال واقعي.</p></div>
+        <div class="step"><h3>طبّق بنفسك</h3><p>أوامر وتمارين تجربها على جهازك، لا قراءة فقط.</p></div>
+        <div class="step"><h3>اختبر وافتح التالي</h3><p>انجح في الاختبار واكسب XP وتفتح لك المحطة التالية.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tracks" style="padding-block-start:0">
+    <div class="wrap">
+      <div class="section-head"><h2>اختر تخصصك</h2><p>لا تقلق إن لم تكن متأكدًا. يمكنك تجربة مسار والانتقال إلى غيره في أي وقت.</p></div>
+      <div class="track-grid" id="track-grid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        <div class="section-head" style="margin:0 0 20px"><h2>تعلّم كأنك تلعب</h2><p>نقاط الخبرة والمستويات تجعل التقدم مرئيًا، لكن الهدف دائمًا أن تتعلم فعلًا.</p></div>
+        <ul class="bullets">
+          <li><span class="ic">⭐</span><div><b>XP ومستويات</b><span>كل درس وتمرين واختبار يمنحك نقاطًا، والمستوى يرتفع مع التقدم.</span></div></li>
+          <li><span class="ic">🔥</span><div><b>Streak يومي</b><span>حافظ على سلسلة أيام التعلم ولو بعشر دقائق.</span></div></li>
+          <li><span class="ic">🔓</span><div><b>فتح المحطات</b><span>أنهِ محطة لتفتح التي بعدها، فلا تقفز فوق الأساسيات.</span></div></li>
+          <li><span class="ic">🏆</span><div><b>شارات وإنجازات</b><span>علامات صغيرة تُظهر ما أنجزته في رحلتك.</span></div></li>
+        </ul>
+      </div>
+      <div class="preview" aria-label="مثال على شكل التقدم">
+        <h3><span>Cybersecurity Journey</span><span class="chip xp">⭐ 1,240 XP</span></h3>
+        <div class="bar" style="margin-block-start:12px"><i style="width:65%"></i></div>
+        <div style="display:flex;justify-content:space-between;font-size:.9rem;margin-block:6px 0"><span class="muted">🔥 7 أيام متتالية</span><b>65%</b></div>
+        <div class="row"><span>Networking</span><span class="st chip ok">✅ مكتمل</span></div>
+        <div class="row"><span>Linux</span><span class="st chip ok">✅ مكتمل</span></div>
+        <div class="row"><span>Security</span><span class="st chip brand">🔄 قيد التقدم</span></div>
+        <div class="row"><span>Web Security</span><span class="st chip">🔒 مقفل</span></div>
+        <div class="row"><span>Blue Team</span><span class="st chip">🔒 مقفل</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><h2>أدوات ومراجع تخدمك أثناء التعلم</h2></div>
+      <div class="list-grid">
+        <a class="item-card" href="tools.html"><span class="ic">🧰</span><div><h3>IT Tools</h3><p>حاسبة Subnet، محوّل ثنائي، مولّد كلمات مرور، Hash وغيرها.</p></div></a>
+        <a class="item-card" href="dictionary.html"><span class="ic">📖</span><div><h3>IT Dictionary</h3><p>قاموس عربي / English للمصطلحات مع مصطلحات مرتبطة.</p></div></a>
+        <a class="item-card" href="library.html"><span class="ic">📚</span><div><h3>Student Library</h3><p>Cheat Sheets وأدلة وتمارين ومختبرات عملية.</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><h2>مجاني للبدء، ويكبر معك</h2><p>الخطط التالية تصوّر ما ستضيفه المنصة لاحقًا. حاليًا كل شيء متاح للتجربة.</p></div>
+      <div class="plans">
+        <div class="plan"><span class="chip ok">Free</span><h3 style="margin-block-start:10px">للبدء</h3>
+          <ul><li>خرائط المسارات</li><li>دروس مختارة</li><li>اختبارات أساسية</li><li>أدوات IT الأساسية</li></ul></div>
+        <div class="plan pro"><span class="chip premium">Premium · قريبًا</span><h3 style="margin-block-start:10px">للتعمّق</h3>
+          <ul><li>دورات متقدمة ومختبرات عملية</li><li>مشاريع تطبيقية</li><li>اختبارات متقدمة وشهادات</li><li>موارد مميزة</li></ul></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="app-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Library — مساعد الطالب التقني</title>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('mst:theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="library">
+<div id="app-header"></div>
+<main class="wrap" style="padding-block-end:60px">
+  <div class="page-head"><h1>📚 Student Library</h1>
+    <p>ملفات ومراجع تساعدك أثناء الرحلة. الملفات في هذه النسخة أمثلة تعرض الشكل النهائي للمكتبة.</p></div>
+  <div class="search-bar"><label class="sr-only" for="lq">بحث</label><input id="lq" type="search" placeholder="ابحث في المكتبة" autocomplete="off"></div>
+  <div class="filters" id="types" role="group" aria-label="نوع المورد"></div>
+  <div class="field" style="max-width:280px"><label for="ltrack">التخصص</label><select id="ltrack"></select></div>
+  <div class="list-grid" id="lib-grid"></div>
+  <div class="ad-slot" data-slot="library-inline">مساحة إعلانية</div>
+</main>
+<div id="app-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/library.js"></script>
+</body>
+</html>
